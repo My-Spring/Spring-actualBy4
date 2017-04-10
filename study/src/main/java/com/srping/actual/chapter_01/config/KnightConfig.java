@@ -4,6 +4,7 @@ import com.srping.actual.chapter_01.knight.BraveKnight;
 import com.srping.actual.chapter_01.knight.Knight;
 import com.srping.actual.chapter_01.knight.Quest;
 import com.srping.actual.chapter_01.knight.SlayDragonQuest;
+import com.srping.actual.chapter_01.minstrel.Minstrel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,7 +23,7 @@ public class KnightConfig {
     @Bean
     public Knight knight()
     {
-        return new BraveKnight(quest());
+        return new BraveKnight(quest(),new Minstrel(System.out));
     }
 
     @Bean

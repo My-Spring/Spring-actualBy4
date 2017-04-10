@@ -1,5 +1,7 @@
 package com.srping.actual.chapter_01.knight;
 
+import com.srping.actual.chapter_01.minstrel.Minstrel;
+
 /**
  * <p>名称</p>
  * <p/>
@@ -13,6 +15,14 @@ public class BraveKnight implements Knight{
 
     private Quest quest;
 
+    private Minstrel minstrel;
+
+    public BraveKnight(Quest quest, Minstrel minstrel)
+    {
+        this.quest = quest;
+        this.minstrel = minstrel;
+    }
+
     public BraveKnight(Quest quest)
     {
         this.quest = quest;
@@ -24,10 +34,19 @@ public class BraveKnight implements Knight{
         quest.embark();
     }
 
+    @Override
+    public void embarkOnQuestWithMinstrel()
+    {
+        minstrel.singBeforeQuest();
+        quest.embark();
+        minstrel.singAfterQuest();
+    }
+
     public static void main(String args[])
     {
         RescueDamselQuest rescueDamselQuest = new RescueDamselQuest();
-        BraveKnight braveKnight = new BraveKnight(rescueDamselQuest);
-        braveKnight.embarkOnQuest();
+        Minstrel minstrel1 = new Minstrel(System.out);
+        BraveKnight braveKnight = new BraveKnight(rescueDamselQuest,minstrel1);
+        braveKnight.embarkOnQuestWithMinstrel();
     }
 }

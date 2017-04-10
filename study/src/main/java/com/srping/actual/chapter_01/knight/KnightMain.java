@@ -1,6 +1,8 @@
 package com.srping.actual.chapter_01.knight;
 
 import com.srping.actual.chapter_01.config.KnightConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * <p>名称</p>
@@ -15,10 +17,10 @@ public class KnightMain {
 
     public static void main(String args[])
     {
-        /*ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/chapter01/knights.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/chapter01/knights.xml");
         Knight knight = context.getBean(Knight.class);
         knight.embarkOnQuest();
-        context.close();*/
+        context.close();
 
         /*ApplicationContext applicationContext = new FileSystemXmlApplicationContext("classpath:chapter01/knights.xml");
         Knight knight = applicationContext.getBean(Knight.class);
@@ -27,8 +29,13 @@ public class KnightMain {
         /*ServletContext servletContext = request.getSession().getServletContext();
         ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);*/
 
-        KnightConfig knightConfig = new KnightConfig();
-        Knight knight = knightConfig.knight();
+       /* AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(KnightConfig.class);
+        Knight knight = context.getBean(Knight.class);
         knight.embarkOnQuest();
+        context.close();*/
+
+        /*KnightConfig knightConfig = new KnightConfig();
+        Knight knight = knightConfig.knight();
+        knight.embarkOnQuest();*/
     }
 }

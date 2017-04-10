@@ -24,6 +24,12 @@ public class DamselRescuingKnight implements Knight{
         rescueDamselQuest.embark();
     }
 
+    @Override
+    public void embarkOnQuestWithMinstrel()
+    {
+        rescueDamselQuest.embark();
+    }
+
     public static void main(String args[])
     {
         DamselRescuingKnight damselRescuingKnight = new DamselRescuingKnight();

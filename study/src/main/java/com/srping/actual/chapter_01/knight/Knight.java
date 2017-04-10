@@ -12,4 +12,6 @@ package com.srping.actual.chapter_01.knight;
 public interface Knight {
 
     void embarkOnQuest();
+
+    void embarkOnQuestWithMinstrel();
 }
