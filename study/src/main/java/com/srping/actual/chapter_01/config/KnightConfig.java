@@ -1,9 +1,9 @@
 package com.srping.actual.chapter_01.config;
 
-import com.srping.actual.chapter_01.BraveKnight;
-import com.srping.actual.chapter_01.Knight;
-import com.srping.actual.chapter_01.Quest;
-import com.srping.actual.chapter_01.SlayDragonQuest;
+import com.srping.actual.chapter_01.knight.BraveKnight;
+import com.srping.actual.chapter_01.knight.Knight;
+import com.srping.actual.chapter_01.knight.Quest;
+import com.srping.actual.chapter_01.knight.SlayDragonQuest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

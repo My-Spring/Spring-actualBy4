@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="knight" class="com.srping.actual.chapter_01.BraveKnight">
+    <bean id="knight" class="com.srping.actual.chapter_01.knight.BraveKnight">
         <constructor-arg ref="quest"/>
     </bean>
 
-    <bean id="quest" class="com.srping.actual.chapter_01.SlayDragonQuest">
+    <bean id="quest" class="com.srping.actual.chapter_01.knight.SlayDragonQuest">
         <constructor-arg ref="#{T(System).out}"/>
     </bean>
 </beans>

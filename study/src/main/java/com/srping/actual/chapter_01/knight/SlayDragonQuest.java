@@ -1,4 +1,4 @@
-package com.srping.actual.chapter_01;
+package com.srping.actual.chapter_01.knight;
 
 import java.io.PrintStream;
 

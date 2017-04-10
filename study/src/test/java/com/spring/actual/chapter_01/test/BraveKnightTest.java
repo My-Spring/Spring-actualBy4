@@ -1,7 +1,7 @@
 package com.spring.actual.chapter_01.test;
 
-import com.srping.actual.chapter_01.BraveKnight;
-import com.srping.actual.chapter_01.Quest;
+import com.srping.actual.chapter_01.knight.BraveKnight;
+import com.srping.actual.chapter_01.knight.Quest;
 import org.junit.Test;
 
 import static org.mockito.Mockito.mock;

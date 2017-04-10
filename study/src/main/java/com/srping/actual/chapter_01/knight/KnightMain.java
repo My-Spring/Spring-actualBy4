@@ -1,13 +1,6 @@
-package com.srping.actual.chapter_01;
+package com.srping.actual.chapter_01.knight;
 
 import com.srping.actual.chapter_01.config.KnightConfig;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-import org.springframework.web.context.support.WebApplicationContextUtils;
-import org.springframework.web.context.support.XmlWebApplicationContext;
 
 /**
  * <p>名称</p>
