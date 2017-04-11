@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.spring.actual.chapter_02.cd"/>
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <context:component-scan base-package="com.spring.actual.chapter_02.cd.s02"/>
+
+    <!--<bean id="cdPlay" class="com.spring.actual.chapter_02.cd.s02.CDPlayer">
+        <property name="compactDisc" ref="blankDisc" />
+    </bean>-->
+    <bean id="cdPlay" class="com.spring.actual.chapter_02.cd.s02.CDPlayer" p:compactDisc-ref="blankDisc2"/>
+    <!--<bean id="blankDisc" class="com.spring.actual.chapter_02.cd.s02.BlankDisc" c:_0="你还要怎样" c:_1="薛之谦">
+        <constructor-arg>
+            <list>
+                <value>你还要我怎样 - 薛之谦</value>
+                <value>词：薛之谦</value>
+                <value>曲：薛之谦</value>
+                <value>你停在了这条我们熟悉的街搜索</value>
+                <value>把你准备好的台词全念一遍</value>
+                <value>我还在逞强 说着谎</value>
+                <value>也没能力遮挡 你去的方向</value>
+            </list>
+        </constructor-arg>
+    </bean>-->
+
+    <bean id="blankDisc2" class="com.spring.actual.chapter_02.cd.s02.BlankDisc" p:title="演员" p:singer="薛之谦" p:tacks-ref="tacksList">
+        <!--<property name="tacks">
+           <list>
+               <value>演员 - 薛之谦</value>
+               <value>词：薛之谦</value>
+               <value>曲：薛之谦</value>
+               <value>简单点 说话的方式简单点</value>
+               <value>递进的情绪请省略</value>
+               <value>你又不是个演员</value>
+               <value>别设计那些情节</value>
+           </list>
+        </property>-->
+    </bean>
+    <util:list id="tacksList">
+        <value>演员 - 薛之谦</value>
+        <value>词：薛之谦</value>
+        <value>曲：薛之谦</value>
+        <value>简单点 说话的方式简单点</value>
+        <value>递进的情绪请省略</value>
+        <value>你又不是个演员</value>
+        <value>别设计那些情节</value>
+    </util:list>
 </beans>

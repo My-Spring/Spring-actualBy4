@@ -1,7 +1,6 @@
-package com.spring.actual.chapter_02.cd;
+package com.spring.actual.chapter_02.cd.s03;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * <p>名称</p>
@@ -12,19 +11,19 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @Date 2017/4/11
  */
-@Component
 public class CDPlayer implements MediaPlay{
 
-    private CompactDisc disc;
+    private CompactDisc compactDisc;
 
     @Autowired
-    public CDPlayer(CompactDisc disc)
+    public CDPlayer(CompactDisc compactDisc)
     {
-        this.disc = disc;
+        this.compactDisc = compactDisc;
     }
 
+    @Override
     public void play()
     {
-        disc.play();
+        compactDisc.play();
     }
 }

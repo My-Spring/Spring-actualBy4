@@ -1,4 +1,4 @@
-package com.srping.actual.chapter_01.knight;
+package com.spring.actual.chapter_01.knight;
 
 /**
  * <p>名称</p>

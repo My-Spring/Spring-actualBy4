@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="knight" class="com.srping.actual.chapter_01.knight.BraveKnight">
+    <bean id="knight" class="com.spring.actual.chapter_01.knight.BraveKnight">
         <constructor-arg ref="quest" />
     </bean>
 
-    <bean id="quest" class="com.srping.actual.chapter_01.knight.SlayDragonQuest">
+    <bean id="quest" class="com.spring.actual.chapter_01.knight.SlayDragonQuest">
         <constructor-arg value="#{T(System).out}" />
     </bean>
 
-    <bean id="minstrel" class="com.srping.actual.chapter_01.minstrel.Minstrel">
+    <bean id="minstrel" class="com.spring.actual.chapter_01.minstrel.Minstrel">
         <constructor-arg value="#{T(System).out}"/>
     </bean>
 

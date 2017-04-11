@@ -1,6 +1,6 @@
-package com.srping.actual.chapter_01.knight;
+package com.spring.actual.chapter_01.knight;
 
-import com.srping.actual.chapter_01.minstrel.Minstrel;
+import com.spring.actual.chapter_01.minstrel.Minstrel;
 
 /**
  * <p>名称</p>

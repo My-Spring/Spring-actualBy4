@@ -1,4 +1,4 @@
-package com.srping.actual.chapter_01.minstrel;
+package com.spring.actual.chapter_01.minstrel;
 
 import java.io.PrintStream;
 

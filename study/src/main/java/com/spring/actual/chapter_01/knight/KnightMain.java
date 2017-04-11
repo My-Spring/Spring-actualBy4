@@ -1,7 +1,5 @@
-package com.srping.actual.chapter_01.knight;
+package com.spring.actual.chapter_01.knight;
 
-import com.srping.actual.chapter_01.config.KnightConfig;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

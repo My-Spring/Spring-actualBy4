@@ -1,10 +1,10 @@
-package com.srping.actual.chapter_01.config;
+package com.spring.actual.chapter_01.config;
 
-import com.srping.actual.chapter_01.knight.BraveKnight;
-import com.srping.actual.chapter_01.knight.Knight;
-import com.srping.actual.chapter_01.knight.Quest;
-import com.srping.actual.chapter_01.knight.SlayDragonQuest;
-import com.srping.actual.chapter_01.minstrel.Minstrel;
+import com.spring.actual.chapter_01.knight.Knight;
+import com.spring.actual.chapter_01.knight.Quest;
+import com.spring.actual.chapter_01.minstrel.Minstrel;
+import com.spring.actual.chapter_01.knight.BraveKnight;
+import com.spring.actual.chapter_01.knight.SlayDragonQuest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
