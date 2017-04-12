@@ -22,4 +22,10 @@ public class CDPlayConfig {
     {
         return new CDPlayer(compactDisc);
     }
+
+    @Bean
+    public CompactDisc compactDisc()
+    {
+        return new MusicDisc();
+    }
 }

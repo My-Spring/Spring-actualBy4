@@ -38,7 +38,7 @@ public class CDPlayerTest {
     @Test
     public void testCdPlay()
     {
-        //cdPlayer.play();
+        //cdPlayer.play(); //class加载比xml优先 DBConfig 里的compactDisc 被xml的覆盖
         mediaPlay.play();
     }
 }

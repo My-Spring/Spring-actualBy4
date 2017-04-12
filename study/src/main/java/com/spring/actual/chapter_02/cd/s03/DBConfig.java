@@ -15,9 +15,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DBConfig {
 
-    @Bean
+    private CompactDisc compactDisc;
+
+    @Bean(name = "compactDisc")
     public CompactDisc compactDisc()
     {
         return new SgtPepper();
     }
+
+
 }
