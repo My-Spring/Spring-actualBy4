@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s03;
+package com.spring.actual.chapter_02.s04;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -14,7 +14,6 @@ import org.springframework.context.annotation.ImportResource;
  * @Date 2017/4/11
  */
 @Configuration
-//@ImportResource("/chapter02/cd-config.xml")
-@Import({DBConfig.class,CDPlayConfig.class})
+@ImportResource("/chapter02/cd04.xml")
 public class SoundSystemConfig {
 }

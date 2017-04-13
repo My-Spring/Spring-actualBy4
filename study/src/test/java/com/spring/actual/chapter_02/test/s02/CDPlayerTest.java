@@ -1,7 +1,7 @@
 package com.spring.actual.chapter_02.test.s02;
 
-import com.spring.actual.chapter_02.cd.s02.CompactDisc;
-import com.spring.actual.chapter_02.cd.s02.MediaPlay;
+import com.spring.actual.chapter_02.s02.CompactDisc;
+import com.spring.actual.chapter_02.s02.MediaPlay;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

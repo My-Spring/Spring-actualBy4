@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s04;
+package com.spring.actual.chapter_02.s04;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

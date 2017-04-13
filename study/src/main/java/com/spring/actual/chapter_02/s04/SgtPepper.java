@@ -1,5 +1,4 @@
-package com.spring.actual.chapter_02.cd.s03;
-
+package com.spring.actual.chapter_02.s04;
 
 /**
  * <p>名称</p>
@@ -10,11 +9,11 @@ package com.spring.actual.chapter_02.cd.s03;
  * @version 1.0
  * @Date 2017/4/11
  */
-public class MusicDisc implements CompactDisc {
+public class SgtPepper implements CompactDisc {
 
-    private String title = "画中仙";
+    private String title = "死了都要爱~";
 
-    private String singer =  "金莎";
+    private String singer =  "信乐团";
 
     @Override
     public void play()

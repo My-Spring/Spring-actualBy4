@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s01;
+package com.spring.actual.chapter_02.s01;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

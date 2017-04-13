@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s02;
+package com.spring.actual.chapter_02.s02;
 
 import java.util.List;
 

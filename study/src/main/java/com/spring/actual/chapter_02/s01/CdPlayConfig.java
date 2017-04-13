@@ -1,7 +1,6 @@
-package com.spring.actual.chapter_02.cd.s01;
+package com.spring.actual.chapter_02.s01;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**

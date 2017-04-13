@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s03;
+package com.spring.actual.chapter_02.s03;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

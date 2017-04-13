@@ -6,12 +6,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-    <context:component-scan base-package="com.spring.actual.chapter_02.cd.s02"/>
+    <context:component-scan base-package="com.spring.actual.chapter_02.s02"/>
 
     <!--<bean id="cdPlay" class="com.spring.actual.chapter_02.cd.s02.CDPlayer">
         <property name="compactDisc" ref="blankDisc" />
     </bean>-->
-    <bean id="cdPlay" class="com.spring.actual.chapter_02.cd.s02.CDPlayer" p:compactDisc-ref="blankDisc2"/>
+    <bean id="cdPlay" class="com.spring.actual.chapter_02.s02.CDPlayer" p:compactDisc-ref="blankDisc2"/>
     <!--<bean id="blankDisc" class="com.spring.actual.chapter_02.cd.s02.BlankDisc" c:_0="你还要怎样" c:_1="薛之谦">
         <constructor-arg>
             <list>
@@ -26,7 +26,7 @@
         </constructor-arg>
     </bean>-->
 
-    <bean id="blankDisc2" class="com.spring.actual.chapter_02.cd.s02.BlankDisc" p:title="演员" p:singer="薛之谦" p:tacks-ref="tacksList">
+    <bean id="blankDisc2" class="com.spring.actual.chapter_02.s02.BlankDisc" p:title="演员" p:singer="薛之谦" p:tacks-ref="tacksList">
         <!--<property name="tacks">
            <list>
                <value>演员 - 薛之谦</value>

@@ -1,4 +1,4 @@
-package com.spring.actual.chapter_02.cd.s02;
+package com.spring.actual.chapter_02.s04;
 
 /**
  * <p>名称</p>

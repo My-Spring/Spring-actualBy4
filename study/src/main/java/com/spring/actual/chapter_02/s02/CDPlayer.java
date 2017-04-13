@@ -1,7 +1,6 @@
-package com.spring.actual.chapter_02.cd.s02;
+package com.spring.actual.chapter_02.s02;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * <p>名称</p>

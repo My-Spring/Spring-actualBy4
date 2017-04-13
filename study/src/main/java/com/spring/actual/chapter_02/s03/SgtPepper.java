@@ -1,6 +1,4 @@
-package com.spring.actual.chapter_02.cd.s01;
-
-import org.springframework.stereotype.Component;
+package com.spring.actual.chapter_02.s03;
 
 /**
  * <p>名称</p>
@@ -11,8 +9,7 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @Date 2017/4/11
  */
-@Component
-public class SgtPepper implements CompactDisc{
+public class SgtPepper implements CompactDisc {
 
     private String title = "死了都要爱~";
 

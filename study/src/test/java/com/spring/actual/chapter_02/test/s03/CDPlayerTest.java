@@ -1,6 +1,8 @@
 package com.spring.actual.chapter_02.test.s03;
 
-import com.spring.actual.chapter_02.cd.s03.*;
+import com.spring.actual.chapter_02.s03.CompactDisc;
+import com.spring.actual.chapter_02.s03.MediaPlay;
+import com.spring.actual.chapter_02.s03.SoundSystemConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
