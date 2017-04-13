@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="blankDisc" class="com.spring.actual.chapter_02.cd.s03.BlankDisc" c:_0="你还要怎样" c:_1="薛之谦">
+        <constructor-arg>
+            <list>
+                <value>你还要我怎样 - 薛之谦</value>
+                <value>词：薛之谦</value>
+                <value>曲：薛之谦</value>
+                <value>你停在了这条我们熟悉的街搜索</value>
+                <value>把你准备好的台词全念一遍</value>
+                <value>我还在逞强 说着谎</value>
+                <value>也没能力遮挡 你去的方向</value>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
