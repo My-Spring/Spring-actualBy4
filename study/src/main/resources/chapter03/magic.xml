@@ -6,4 +6,6 @@
     <bean id="magicProperty" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="location" value="/chapter03/magic.properties"/>
     </bean>
+
+    <bean id="cake" class="com.spring.actual.chapter_03.s02.Cake" primary="true"/>
 </beans>
