@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <context:property-placeholder location="classpath:/chapter03/s05.properties" file-encoding="utf-8"/>
+    <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="propertiesArray">
+            <array>
+                <ref bean="s05Properties" />
+            </array>
+        </property>
+    </bean>-->
+
+
+    <bean id="blankDisc" class="com.spring.actual.chapter_03.s05.BlankDisc" c:_0="${disc.title}" c:_1="${disc.singer}">
+        <constructor-arg>
+            <list>
+                <value>你还要我怎样 - 薛之谦</value>
+                <value>词：薛之谦</value>
+                <value>曲：薛之谦</value>
+                <value>你停在了这条我们熟悉的街搜索</value>
+                <value>把你准备好的台词全念一遍</value>
+                <value>我还在逞强 说着谎</value>
+                <value>也没能力遮挡 你去的方向</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!--<bean id="s05Properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean" p:fileEncoding="utf-8">
+        <property name="location" value="classpath:/chapter03/s05.properties"></property>
+    </bean>-->
+</beans>
