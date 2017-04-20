@@ -59,17 +59,9 @@ public class NewAudience {
         System.out.printf("演出结束了，观众离场...");
     }
 
-    @Around("performance()")
+    //@Around("performance()")
     public void roundPerform(ProceedingJoinPoint joinPoint)
     {
         System.out.printf("艺术厅正在演出...");
-        try
-        {
-            //如果不调这个方法的话，那么你的通知实际上会阻塞对被通知方法的调用
-            //joinPoint.proceed();
-        } catch (Throwable throwable)
-        {
-            throwable.printStackTrace();
-        }
     }
 }

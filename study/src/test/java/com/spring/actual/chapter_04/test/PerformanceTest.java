@@ -25,7 +25,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class PerformanceTest {
 
     @Autowired
-    @Qualifier("musicPerformance")
+    @Qualifier("dancePerformance")
     private Performance performance;
 
     @Test

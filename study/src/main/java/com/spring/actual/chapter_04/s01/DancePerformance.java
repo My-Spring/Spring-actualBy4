@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DancePerformance implements Performance{
     @Override
+    @RetryExecution
     public void perform()
     {
         System.out.println("舞蹈演出...");

@@ -9,9 +9,13 @@
 
     <context:component-scan base-package="com.spring.actual.chapter_04.s01"/>
 
-    <!--启动自动代理-->
-    <aop:aspectj-autoproxy />
-
     <bean class="com.spring.actual.chapter_04.s01.NewAudience"/>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
+        <property name="proxyTargetClass" value="true"/>
+    </bean>
+
+    <!--启动自动代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 
 </beans>
