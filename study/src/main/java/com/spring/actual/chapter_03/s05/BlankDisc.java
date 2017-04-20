@@ -25,6 +25,11 @@ public class BlankDisc implements CompactDisc{
     {
     }
 
+    public BlankDisc(@Value("#{systemProperties['disc.title']}")String title)
+    {
+        this.title = title;
+    }
+
     public BlankDisc(@Value("${disc.title}")String title, @Value("${disc.singer}")String singer)
     {
         this.title = title;

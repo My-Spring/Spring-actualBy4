@@ -18,7 +18,7 @@
     </bean>-->
 
 
-    <bean id="blankDisc" class="com.spring.actual.chapter_03.s05.BlankDisc" c:_0="${disc.title}" c:_1="${disc.singer}">
+    <bean id="blankDisc" class="com.spring.actual.chapter_03.s05.BlankDisc" c:_0="#{systemProperties['disc.title']}" c:_1="${disc.singer}" c:_2="#{T(java.lang.Math).PI *  6^2}">
         <constructor-arg>
             <list>
                 <value>你还要我怎样 - 薛之谦</value>
